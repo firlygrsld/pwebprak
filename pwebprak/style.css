@@ -13,6 +13,7 @@
 .headerSection .search-bar {
     padding-left: 1cm;
     border-radius: 30px;
+    border: 2px
 }
 
 ul {
@@ -43,20 +44,57 @@ a:hover {
 
 #loginSection {
     display: flex;
-    max-width: 850px;
-    background: #ffffff;
-    border-radius: 10px;
+    align-items: center;
 }
 
-.login {
-    width: 100%;
+.loginSection .image-container {
+    flex: 1;
+    padding: 30px;
+}
+
+.loginSection .login-container {
+    flex: 1;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+.loginSection input::placeholder {
+    font-family: 'Jost', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 form {
-    width: 100%;
-    margin: 60px auto;
+    max-width: 300px;
+    margin: auto;
 }
 
+input {
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#loginSection .login {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    font-family: Jost;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
 h1 {
     margin: 20px;
     text-align: center;
@@ -102,6 +140,13 @@ h1 {
     margin-right: 90px;
 }
 
+#InformationSection .card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: flex;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 #InformationSection h1 {
     font-family: Lalezar;
     font-weight: bold;
@@ -110,8 +155,30 @@ h1 {
 }
 
 #StoreSection h1 {
-        font-family: Lalezar;
-        font-weight: bold;
-        font-size: 2em;
-        color: #142045;
+    font-family: Lalezar;
+    font-weight: bold;
+    font-size: 2em;
+    color: #142045;
+}
+
+#AboutUsSection {
+    background-color: #142045;
+}
+
+#AboutUsSection h1 {
+    font-family: Lalezar;
+    font-weight: bold;
+    font-size: 50px;
+    color: #F8921E;
+    text-align: start;
+    margin-top: 0px;
+}
+
+#AboutUsSection p {
+    font-family: Lalezar;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 25px;
+    margin-bottom: 20px;
 }
