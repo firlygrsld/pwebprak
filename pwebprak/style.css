@@ -2,29 +2,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost');
 @import url('https://fonts.googleapis.com/css2?family=Alata');
 
-h1{
-    font-family: 'Lalezar';
+#headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
 }
-h3{
-    font-family: 'Jost';
+
+.headerSection .search-bar {
+    padding-left: 1cm;
+    border-radius: 30px;
 }
-h4{
-    font-family: 'Alata';
-}
-p{
-    font-family: 'Alata'; font-size: small;
-}
-nav ul {
+
+ul {
     list-style: none;
+    margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-around;
 }
-nav li {
+
+li {
     margin-bottom: 10px;
+    margin-right: 15px;
 }
-nav a {
+
+a {
     text-decoration: none;
-    color: #333;
+    color: #142045;
     font-weight: normal;
     font-family: 'Jost', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #ffffff;
+}
+
+#loginSection {
+    display: flex;
+    max-width: 850px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.login {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    margin: 60px auto;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Lalez;
+}
+
+#PacePalSection {
+    background-color: #142045;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+#PacePalSection h1 {
+    font-family: 'Lalezar';
+    color: #F8921E;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 2em;
+}
+
+#PacePalSection p {
+    font-family: 'Jost', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    font-size: small;
+    margin-right: 15px;
+}
+
+#PacePalSection button {
+    color: #ffffff;
+    background-color: #F8921E;
+    font-family: Jost;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 90px;
+}
+
+#InformationSection h1 {
+    font-family: Lalezar;
+    font-weight: bold;
+    font-size: 2em;
+    color: #142045;
+}
+
+#StoreSection h1 {
+        font-family: Lalezar;
+        font-weight: bold;
+        font-size: 2em;
+        color: #142045;
 }

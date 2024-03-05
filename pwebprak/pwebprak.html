@@ -9,37 +9,42 @@
     <title>PacePal</title>
 </head>
 <body>
-    <input type="text" id="searchBar" placeholder="search">
-    <nav>
-        <ul>
-            <li><a href="/home">HOME</a></li>
-            <li><a href="/information">INFORMATION</a></li>
-            <li><a href="/store">STORE</a></li>
-            <li><a href="/about">ABOUT US</a></li>
-        </ul>
-    </nav>
+    <section id="headerSection">
+        <div class="search-bar">
+            <input type="text" id="searchBar" placeholder="search">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/information">INFORMATION</a></li>
+                <li><a href="/store">STORE</a></li>
+                <li><a href="/about">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </section>
 
     <section id="loginSection">
-        <img src ="D:\kuliah\semester 4\PWEB\Prak\running.jpg" alt = "Running">
+        <div class="login">
+        <img src="D:\kuliah\semester 4\PWEB\Prak\running.jpg" alt="Running">
         <form action="/login" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
+            <input type="text" id="username" name="username" placeholder="email" required>
+            <input type="password" id="password" name="password" placeholder="password" required>
             <input type="submit" value="Login">
         </form>
-
+    
         <p>Don't have an account? <a href="/signup">Sign up</a></p>
+        </div>
+    </section>
+
+    <section id="PacePalSection">
         <h1>
             What is PacePal?
         </h1>
             <p>PacePal is an application that can help you<br>to track and analyze how far you run</p>
-        <button>Download</button>
+        <button>DOWNLOAD</button>
     </section>
 
-    <section id="Information">
+    <section id="InformationSection">
         <h1>
             Information
         </h1>
@@ -90,7 +95,7 @@
             </div>
     </section>
 
-    <section id="Store">
+    <section id="StoreSection">
         <h1>
             PaceStore
         </h1>
@@ -156,7 +161,7 @@
         </div>
     </section>
 
-    <section id="About Us">
+    <section id="AboutUsSection">
         <h1>
             Contact Us
         </h1>
